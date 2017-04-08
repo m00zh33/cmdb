@@ -1,0 +1,15 @@
+
+{% extends "layout.html" %}
+{% block body %}
+{% endblock %}
+    
+{% block js %}
+    <script>	
+        $(function() {
+            $.rebootOps(
+              {"data": [{"name": "\u5185\u7f51ip", "title": "\u5185\u7f51IP\u5730\u5740"}, {"name": "\u5916\u7f51ip", "empty": "yes", "title": "\u5916\u7f51IP\u5730\u5740"}, {"type": "select", "name": "\u4e91\u4ea7\u5546", "value": {"0": "Ucloud", "1": "\u963f\u91cc\u4e91"}, "title": "\u4e91\u4ea7\u5546"}, {"type": "select", "name": "\u533a\u57df", "value": {"0": "\u5317\u4eac\u4e8c\u53ef\u7528\u533aB", "1": "\u5317\u4eac\u4e8c\u53ef\u7528\u533aC", "2": "\u5317\u4eac\u4e8c\u53ef\u7528\u533aD", "3": "\u4e0a\u6d77\u4e8c\u53ef\u7528\u533aA", "4": "\u4e0a\u6d77\u4e8c\u53ef\u7528\u533aB", "5": "\u5e7f\u4e1c\u53ef\u7528\u533aB", "6": "\u9999\u6e2f\u53ef\u7528\u533aA", "7": "\u7f8e\u56fd\u52a0\u5dde\u53ef\u7528\u533aA", "8": "\u534e\u53171", "9": "\u534e\u53172", "10": "\u534e\u4e1c1", "11": "\u534e\u4e1c2"}, "title": "\u533a\u57df"}, {"name": "os", "title": "\u64cd\u4f5c\u7cfb\u7edf"}, {"name": "CPU", "title": "CPU"}, {"name": "\u5185\u5b58", "title": "\u5185\u5b58"}, {"name": "\u786c\u76d8", "title": "\u786c\u76d8"}, {"name": "\u4e1a\u52a1", "title": "\u4e1a\u52a1"}, {"name": "\u8d1f\u8d23\u4eba", "title": "\u8d1f\u8d23\u4eba"}], "name": "online_host", "title": "\u7ebf\u4e0a\u670d\u52a1\u5668"}
+            )
+        })
+    </script>
+{% endblock %}
+
